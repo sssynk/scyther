@@ -4,6 +4,8 @@ Thanks to @freakyscientist for help with the second authentication part.
 
 This is a **simple proof of concept** for a PTC account generator. It is provided in a way that other projects can build off of, but **not intended to be used as is**. This project is for educational purposes only.
 
+It does work and can generate accounts extremely fast (up to 20 per minute). Others have gotten it working on their computers too, but it requires experience.
+
 ## How does it work?
 
 3 Parts (I could have made it 2 but I am keeping it as is for now)
