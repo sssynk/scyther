@@ -96,7 +96,7 @@ def generate_account():
         # remove all colons from password
         accountPassword = accountPassword.replace(":", "")
 
-        log("Generating account with name pokepro"+accountName+" and password "+accountPassword+"...")
+        log("Generating account with name scyther"+accountName+" and password "+accountPassword+"...")
 
         # prepare proxy
 
@@ -181,7 +181,7 @@ def generate_account():
 
         usernameInput = driver.find_element(by=By.ID, value="screen_name-text-input")
 
-        usernameInput.send_keys("pokepro"+screenName)
+        usernameInput.send_keys("scyther"+screenName)
 
         #sleep(0.5)
 
@@ -194,7 +194,7 @@ def generate_account():
         usernameInput = driver.find_element(by=By.ID, value="username-text-input")
         paswordInput = driver.find_element(by=By.ID, value="password-text-input")
 
-        usernameInput.send_keys("pokepro"+accountName)
+        usernameInput.send_keys("scyther"+accountName)
         paswordInput.send_keys(accountPassword)
 
         #sleep(0.5)
@@ -222,7 +222,7 @@ def generate_account():
 
         log("Verifying "+accountName+" (PoGo)...")
 
-        driver.get("https://join.pokemon.com/?jump_activate=activation&username=pokepro"+accountName+"&challenge="+challenge)
+        driver.get("https://join.pokemon.com/?jump_activate=activation&username=scyther"+accountName+"&challenge="+challenge)
 
         WebDriverWait(driver, 60).until(lambda driver: driver.find_element("xpath","//button[contains(text(), 'Continue')]"))
 
@@ -243,10 +243,10 @@ def generate_account():
 
         log("Account created successfully (passed all verifications)")
 
-        log("Account created! pokepro"+accountName+" with password "+accountPassword+" and email "+accountName+"@"+email_domain)
+        log("Account created! scyther"+accountName+" with password "+accountPassword+" and email "+accountName+"@"+email_domain)
 
         with open("accounts.txt", "a") as f:
-            f.write("pokepro"+accountName+":"+accountPassword+"\n")
+            f.write("scyther"+accountName+":"+accountPassword+"\n")
 
         driver.quit()
     except:
