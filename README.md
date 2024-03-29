@@ -1,5 +1,7 @@
 # Scyther Account Generator POC
 
+Thanks to @freakyscientist for help with the second authentication part.
+
 This is a **simple proof of concept** for a PTC account generator. It is provided in a way that other projects can build off of, but **not intended to be used as is**. This project is for educational purposes only.
 
 ## How does it work?
