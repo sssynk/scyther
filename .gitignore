@@ -1,0 +1,10 @@
+Dockerfile
+accounts.txt
+oldacc.txt
+proxies.txt
+recently_used_proxies.txt
+tests
+sgenold.py
+scytherold2.py
+scyther_generate.py
+.DS_Store
