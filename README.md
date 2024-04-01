@@ -6,6 +6,10 @@ This is a **simple proof of concept** for a PTC account generator. It is provide
 
 It does work and can generate accounts extremely fast (up to 20 per minute). Others have gotten it working on their computers too, but it requires experience.
 
+## Working Projects
+SpielerNogard has a fantastic fork here:
+https://github.com/SpielerNogard/scyther/tree/main
+
 ## How does it work?
 
 3 Parts (I could have made it 2 but I am keeping it as is for now)
@@ -20,7 +24,7 @@ It does work and can generate accounts extremely fast (up to 20 per minute). Oth
 2. Install the requirements with `pip install -r requirements.txt`
 3. Make a file called proxies.txt with a list of proxies in the format `ip:port` (one per line)
 4. On line 104 of `scyther_generate_sync_inf.py` change the `browser_executable_path` to the path of your browser executable (chrome) or just remove it and also in file `scyther_generate.py`
-5. Set the challenge (get it from the pogo app) and email_domain variables on the 3rd line of both `scyther_generate.py` and `scyther_generate_sync_inf.py`
+5. Set the challenge (get it from the pogo app or generate it yourself, can be found in SpielerNogards fork) and email_domain variables on the 3rd line of both `scyther_generate.py` and `scyther_generate_sync_inf.py`
 6. Set line 14 of scyther_email to the hook for where to send codes (could use localhost:8090 if your email server and generator are on the same machine)
 7. yay you're done
 
