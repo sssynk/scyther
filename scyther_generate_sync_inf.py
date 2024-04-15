@@ -102,9 +102,11 @@ def generate_account():
 
         options = uc.ChromeOptions()
         options.add_argument(f'--proxy-server='+proxy)
+        options.add_argument('--lang=en')
 
         #options.add_experimental_option("excludeSwitches", ["enable-automation"])
         #options.add_experimental_option('useAutomationExtension', False)
+        #options.add_experimental_option('prefs', {'intl.accept_languages': 'en,en_US'})
 
         driver = uc.Chrome(options=options, headless=True, user_multi_procs=True, browser_executable_path="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
         #driver = webdriver.Chrome(options=options)
